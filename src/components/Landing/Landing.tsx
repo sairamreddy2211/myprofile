@@ -23,7 +23,7 @@ const Landing = () => {
         className="fixed top-8 right-8 flex gap-4"
       >
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/sairamreddy2211"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-110 transition-transform"
@@ -34,7 +34,7 @@ const Landing = () => {
           />
         </a>
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/sai-rama-reddy-padala-386a1a19a/"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:scale-110 transition-transform"
@@ -88,7 +88,7 @@ const Landing = () => {
               className="text-xl md:text-2xl"
               style={{ color: colors.text.secondary }}
             >
-              Frontend Developer crafting financial applications
+              Software Developer crafting financial applications
             </p>
           </motion.div>
          
