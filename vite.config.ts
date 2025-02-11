@@ -9,5 +9,10 @@ export default defineConfig({
     },
   },
   plugins: [react()],
-  base: "/myprofile/"
+  base: "/myprofile/",
+  build: {
+    sourcemap: true,
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 });
