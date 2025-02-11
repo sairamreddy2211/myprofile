@@ -6,6 +6,15 @@
   <link rel="icon" type="image/svg+xml" href="/myprofile/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My profile</title>
+  <script>
+    (function () {
+      const redirect = localStorage.getItem('path');
+      if (redirect) {
+        localStorage.removeItem('path');
+        window.history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <script type="module" crossorigin src="/myprofile/assets/index-e63a5463.js"></script>
   <link rel="stylesheet" href="/myprofile/assets/index-da5dcb42.css">
 </head>
@@ -14,15 +23,7 @@
   <div id="root"></div>
   
   <!-- index.html -->
-  <script>
-    (function () {
-      const redirect = localStorage.getItem('path');
-      if (redirect) {
-        localStorage.removeItem('path');
-        window.history.replaceState(null, null, '/myprofile');
-      }
-    })();
-  </script>
+
 </body>
 
 </html>
