@@ -14,5 +14,6 @@ export default defineConfig({
     sourcemap: true,
     outDir: 'dist',
     assetsDir: 'assets',
-  }
+  },
+  assetsInclude: ['**/*.otf']
 });
