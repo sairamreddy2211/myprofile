@@ -10,10 +10,10 @@ export default defineConfig({
   },
   plugins: [react()],
   base: "/myprofile/",
-  // build: {
-  //   sourcemap: true,
-  //   outDir: 'dist',
-  //   assetsDir: 'assets',
-  // },
+  build: {
+    sourcemap: true,
+    outDir: 'dist',
+    assetsDir: 'assets',
+  },
   assetsInclude: ['**/*.otf']
 });

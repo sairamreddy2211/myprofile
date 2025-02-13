@@ -24,7 +24,7 @@ const AboutSection: React.FC = () => {
         <div className="relative group">
             <div className="relative rounded-lg overflow-hidden bg-[#64ffda] bg-opacity-10 w-full max-w-[320px] mx-auto">
               <img
-                src="/spiderman.png"
+                src={`${import.meta.env.BASE_URL}spiderman.png`}  
                 alt="Profile"
                 className="w-full h-auto rounded-lg mix-blend-multiply filter grayscale contrast-100 hover:filter-none hover:mix-blend-normal transition-all duration-300"
               />
