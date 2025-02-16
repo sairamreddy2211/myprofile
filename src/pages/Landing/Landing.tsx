@@ -16,18 +16,16 @@ const Landing = () => {
     return (
         <div className="bg-[#0a192f] min-h-screen">
             <Navbar />
-             <ConnectIcons/>
+             {/* <ConnectIcons/>
             <main className="px-[200px]">
                 <Landing_section />
                 <AboutSection />
-                {/* <SkillsSection skills={skillsData} /> */}
                 <ExperienceSection />
                 <ProjectsGrid />
                 <AchievementsSection />
                 <ContactSection />
                 <Footer />
-
-            </main>
+            </main> */}
         </div>
     )
 }

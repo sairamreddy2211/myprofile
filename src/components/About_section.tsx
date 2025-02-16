@@ -3,11 +3,11 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   const technologies = [
-    ['Angular', 'React'],
-    ['TypeScript', 'JavaScript (ES6+)'],
-    ['Node.js', 'MongoDB'],
+    ['Angular', 'React',"React Native"],
+    ['TS/JS(ES6+)', 'HTML/CSS/SCSS'],
+    ['Android(kotlin)', 'Flutter',".NET"],
+    ['Node.js', 'MongoDB',"PostgreSQL"],
     ['PWA', 'Module Federation'],
-    ['React Native', 'Flutter']
   ];
 
   return (
@@ -51,7 +51,7 @@ const AboutSection: React.FC = () => {
                 Here are a few technologies I've been working with recently:
               </p>
               
-              <div className="grid grid-cols-2 gap-x-8 gap-y-2">
+              <div className="grid grid-cols-3 gap-x-8 gap-y-2">
                 {technologies.map((row, rowIndex) => (
                   <React.Fragment key={rowIndex}>
                     {row.map((tech, techIndex) => (
