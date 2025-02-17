@@ -14,10 +14,10 @@ import { skillsData } from "@/config"
 
 const Landing = () => {
     return (
-        <div className="bg-[#0a192f] min-h-screen">
+        <div className="bg-[#0a192f] min-h-screen w-screen overflow-hidden">
             <Navbar />
-             {/* <ConnectIcons/>
-            <main className="px-[200px]">
+             <ConnectIcons/>
+            <main className="px-5 md:px-[200px] overflow-hidden">
                 <Landing_section />
                 <AboutSection />
                 <ExperienceSection />
@@ -25,7 +25,7 @@ const Landing = () => {
                 <AchievementsSection />
                 <ContactSection />
                 <Footer />
-            </main> */}
+            </main> 
         </div>
     )
 }

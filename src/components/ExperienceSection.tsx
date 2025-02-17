@@ -8,7 +8,7 @@ const ExperienceSection: React.FC = () => {
     {
       company: "Bajaj FinServ",
       link: "#",
-      role: "Frontend Developer",
+      role: "Software Engineer",
       date: "Feb 2023 - Present",
       highlights: [
         "Developed comprehensive Gold Loan System enhancing user management capabilities",
@@ -40,7 +40,7 @@ const ExperienceSection: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-2 mb-12">
           <span className="font-mono text-[#64ffda] text-xl">02.</span>
-          <h2 className="font-calibre text-4xl text-slate-300 font-semibold">Where I've Worked</h2>
+          <h2 className="font-calibre text-[22px] md:text-4xl text-slate-300 font-semibold">Where I've Worked</h2>
           <div className="h-[1px] bg-slate-600 flex-grow ml-4"></div>
         </div>
         <div>

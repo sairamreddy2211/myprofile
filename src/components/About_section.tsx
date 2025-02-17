@@ -4,8 +4,8 @@ import React from 'react';
 const AboutSection: React.FC = () => {
   const technologies = [
     ['Angular', 'React',"React Native"],
-    ['TS/JS(ES6+)', 'HTML/CSS/SCSS'],
-    ['Android(kotlin)', 'Flutter',".NET"],
+    ['TS/JS (ES6+)', 'HTML/CSS SCSS'],
+    ['Android (kotlin)', 'Flutter',".NET"],
     ['Node.js', 'MongoDB',"PostgreSQL"],
     ['PWA', 'Module Federation'],
   ];

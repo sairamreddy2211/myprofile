@@ -4,7 +4,7 @@ import React from 'react';
 const ConnectIcons: React.FC = () => {
 
   return (
-    <div className="fixed flex flex-col space-y-4 bottom-0 left-[50px] items-center justify-center">
+    <div className="hidden md:flex fixed flex-col space-y-4 bottom-0 left-[50px] items-center justify-center">
       <a
         href="https://github.com/yourusername"
         target="_blank"
