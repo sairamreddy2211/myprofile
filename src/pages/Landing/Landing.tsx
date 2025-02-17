@@ -17,7 +17,7 @@ const Landing = () => {
         <div className="bg-[#0a192f] min-h-screen">
             <Navbar />
              <ConnectIcons/>
-            <main className="px-[200px]">
+            <main className="px-5 md:px-[200px]">
                 <Landing_section />
                 <AboutSection />
                 {/* <SkillsSection skills={skillsData} /> */}

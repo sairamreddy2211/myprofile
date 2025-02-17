@@ -49,7 +49,7 @@ const ProjectsGrid = () => {
   return (
     <section className="max-w-6xl mx-auto px-4 py-20" id="work">
       <div className="flex items-center gap-4 mb-12">
-        <h2 className="text-3xl font-semibold text-gray-200">
+        <h2 className="text-[22px] md:text-3xl font-semibold text-gray-200">
           <span className="text-[#64ffda] font-mono text-xl mr-2">03.</span>
           Some Things I've Built
         </h2>
