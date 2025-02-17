@@ -29,7 +29,7 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
         
         {/* Animated highlight line */}
         <motion.div
-          className="absolute left-0 w-[2px] bg-[#64ffda] hidden"
+          className="absolute left-0 w-[2px] bg-[#64ffda] hidden md:block"
           initial={{ height: `${100 / companies.length}%` }}
           animate={{
             y: `${selectedTab * 100}%`,
