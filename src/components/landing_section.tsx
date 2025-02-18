@@ -6,7 +6,7 @@ const Landing_section: React.FC = () => {
     return (
         <section className="min-h-screen flex flex-col justify-center px-6 bg-[#0a192f]">
             <div className="space-y-5">
-                <p className="font-mono text-[#00caf9] text-[13px] md:text-lg">Hi, my name is</p>
+                <p className="font-mono text-[#00caf9] text-[13px] md:text-lg pt-16 md:pt-0">Hi, my name is</p>
 
                 <h1 className="font-calibre font-semibold text-[40px] md:text-7xl text-slate-300">
                     Sai Ram.
