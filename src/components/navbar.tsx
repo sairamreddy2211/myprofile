@@ -76,11 +76,10 @@ const Navbar: React.FC = () => {
             </svg>
           </a>
         </div>
-
+        {/* 53 hamburger */}
         <div className='md:hidden z-[53]'>
-          <Hamburger handleClick={handleClick} />
+          <Hamburger isclose={opensidebar} handleClick={handleClick} />
         </div>
-
         <div className="hidden md:flex items-center space-x-8">
           {navItems.map((item, index) => (
             <a
@@ -99,8 +98,10 @@ const Navbar: React.FC = () => {
           ))}
         </div>
       </div>
+
+      {/* 52 nav items */}
       <motion.div
-        className='md:hidden h-screen bg-white fixed right-0 z-[52] top-0'
+        className='md:hidden h-[120vh] bg-white fixed right-0 z-[52] top-0'
         animate={{
           x: opensidebar ? 0 : 200
         }}
@@ -117,12 +118,12 @@ const Navbar: React.FC = () => {
               >
                 <div className='flex flex-col items-center justify-center '>
 
-                <p className="font-mono text-lg text-[#00caf9]">
-                  {item.number}
-                </p>
-                <p className="font-calibre text-lg text-white">
-                  {item.text}
-                </p>
+                  <p className="font-mono text-lg text-[#00caf9]">
+                    {item.number}
+                  </p>
+                  <p className="font-calibre text-lg text-white">
+                    {item.text}
+                  </p>
                 </div>
               </a>
             ))}
