@@ -7,13 +7,15 @@ import Footer from "@/components/Footer"
 import Landing_section from "@/components/landing_section"
 import Navbar from "@/components/navbar"
 import ProjectsGrid from "@/components/ProjectsGrid"
+import Cover from "@/components/ui/cover"
 
 
 const Landing = () => {
     return (
         <div className="bg-[#0a192f] min-h-screen w-full overflow-hidden">
+            <Cover />
             <Navbar />
-             <ConnectIcons/>
+            <ConnectIcons />
             <main className="px-5 md:px-[200px]">
                 <Landing_section />
                 <AboutSection />
@@ -22,7 +24,7 @@ const Landing = () => {
                 <AchievementsSection />
                 <ContactSection />
                 <Footer />
-            </main> 
+            </main>
         </div>
     )
 }
