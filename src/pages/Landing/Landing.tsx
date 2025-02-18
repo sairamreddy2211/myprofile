@@ -6,18 +6,15 @@ import ExperienceSection from "@/components/ExperienceSection"
 import Footer from "@/components/Footer"
 import Landing_section from "@/components/landing_section"
 import Navbar from "@/components/navbar"
-import Navbar_section from "@/components/navbar"
 import ProjectsGrid from "@/components/ProjectsGrid"
-import SkillsSection from "@/components/SkillsSection"
-import { skillsData } from "@/config"
 
 
 const Landing = () => {
     return (
-        <div className="bg-[#0a192f] min-h-screen w-screen overflow-hidden">
+        <div className="bg-[#0a192f] min-h-screen w-full overflow-hidden">
             <Navbar />
              <ConnectIcons/>
-            <main className="px-5 md:px-[200px] overflow-hidden">
+            <main className="px-5 md:px-[200px]">
                 <Landing_section />
                 <AboutSection />
                 <ExperienceSection />
