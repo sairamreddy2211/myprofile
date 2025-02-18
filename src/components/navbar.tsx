@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import React, { useState } from 'react';
-import { motion, useMotionValueEvent, useScroll } from 'framer-motion';
+import { motion, MotionValue, useMotionValueEvent, useScroll } from 'framer-motion';
 import Hamburger from './ui/hamburger';
 
 const Navbar: React.FC = () => {
@@ -8,8 +8,8 @@ const Navbar: React.FC = () => {
     { number: '01.', text: 'About' },
     { number: '02.', text: 'Experience' },
     { number: '03.', text: 'Work' },
-    { number: '03.', text: 'Recognition' },
-    { number: '04.', text: 'Contact' },
+    { number: '04.', text: 'Recognition' },
+    { number: '05.', text: 'Contact' },
   ];
 
   const [hidden, setHidden] = useState(false);
@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     // Hide nav when scrolling down, show when scrolling up
-    if (latest > prevScrollY) {
+    if (latest > prevScrollY && latest > 76) {
       setHidden(true);
     } else {
       setHidden(false);
