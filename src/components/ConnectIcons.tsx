@@ -6,7 +6,7 @@ const ConnectIcons: React.FC = () => {
   return (
     <div className="hidden md:flex fixed flex-col space-y-4 bottom-0 left-[50px] items-center justify-center">
       <a
-        href="https://github.com/yourusername"
+        href="https://github.com/sairamreddy2211"
         target="_blank"
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
@@ -16,7 +16,7 @@ const ConnectIcons: React.FC = () => {
         </svg>
       </a>
       <a
-        href="https://linkedin.com/in/yourusername"
+        href="https://www.linkedin.com/in/sai-rama-reddy-padala-386a1a19a/"
         target="_blank"
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
@@ -26,13 +26,13 @@ const ConnectIcons: React.FC = () => {
         </svg>
       </a>
       <a
-        href="https://twitter.com/yourusername"
+        href="mailto:sairamreddy2211@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
       >
         <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+          <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z" />
         </svg>
       </a>
       <div className='h-[100px] bg-white w-[0.5px]'></div>

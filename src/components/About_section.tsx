@@ -5,9 +5,9 @@ const AboutSection: React.FC = () => {
   const technologies = [
     ['Angular', 'React',"React Native"],
     ['TS/JS (ES6+)', 'HTML/CSS SCSS'],
-    ['Android (kotlin)', 'Flutter',".NET"],
+    ['Android (kotlin)', 'Python',".NET"],
     ['Node.js', 'MongoDB',"PostgreSQL"],
-    ['PWA', 'Module Federation'],
+    ['PWA', 'Module Federation','Flutter'],
   ];
 
   return (
@@ -26,7 +26,7 @@ const AboutSection: React.FC = () => {
               <img
                 src={`${import.meta.env.BASE_URL}spiderman.png`}  
                 alt="Profile"
-                className="w-full h-auto rounded-lg mix-blend-multiply filter grayscale contrast-100 hover:filter-none hover:mix-blend-normal transition-all duration-300"
+                className="w-full h-auto rounded-lg  hover:mix-blend-normal transition-all duration-300"
               />
               <div className="absolute inset-0 bg-[#64ffda] opacity-20 hover:opacity-0 transition-opacity duration-300"></div>
               <div className="absolute inset-0 border-2 border-[#64ffda] rounded-lg translate-x-4 translate-y-4 -z-10 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform duration-300"></div>
@@ -35,7 +35,7 @@ const AboutSection: React.FC = () => {
           {/* right column with text content */}
           <div className="space-y-6">
             <p className="font-calibre text-[17px] text-slate-300">
-              Hi! I'm a Frontend Developer based in Bangalore, with a unique journey that began through ethical hacking experiments.
+              Hi! I'm a Software Developer based in Bangalore, with a unique journey that began through ethical hacking experiments.
             </p>
 
             <p className="font-calibre text-[17px] text-slate-400">

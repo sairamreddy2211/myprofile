@@ -6,7 +6,7 @@ const ProjectsGrid = () => {
       title: "CodePlay 🎮",
       description: "Real-time HTML, CSS, and JavaScript compiler with live preview. Perfect for quick prototyping and code experimentation.",
       tech: ["React", "CodeMirror", "JavaScript"],
-      github: "#"
+      github: "https://github.com/sairamreddy2211/html-css-js-compiler"
     },
     {
       title: "Memory Mapper 🎵",
@@ -24,25 +24,25 @@ const ProjectsGrid = () => {
       title: "BlogVerse ✍️",
       description: "Medium-inspired blogging platform where users can share and interact with articles.",
       tech: ["Node.js", "EJS", "MongoDB"],
-      github: "#"
+      github: "https://github.com/sairamreddy2211/Blog"
     },
     {
       title: "BarterHub 🔄",
       description: "Platform enabling users to exchange goods without money. Available as both web and mobile application.",
       tech: ["React Native", "Firebase", "React"],
-      github: "#"
+      github: "https://github.com/sairamreddy2211/barter"
     },
     {
       title: "BeggingBits 😄",
       description: "Humorous web app about a developer's journey with witty animations and interactive elements.",
       tech: ["Flutter", "Firebase", "Animations"],
-      github: "#"
+      github: "https://github.com/sairamreddy2211/Begging"
     },
     {
       title: "BusinessDecode 💡",
       description: "Mobile app connecting business students with local shops to solve real-world challenges. A portfolio builder for aspiring entrepreneurs.",
       tech: ["React Native", "Firebase", ".NET"],
-      github: "#"
+      github: "https://github.com/sairamreddy2211/Business_decode"
     }
   ];
 

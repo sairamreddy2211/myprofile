@@ -7,12 +7,14 @@ const ProjectCard = ({ title, description, tech, github, external }) => {
         <Folder className="w-10 h-10 text-[#64ffda]" />
         <div className="flex gap-4">
           {github && (
-            <a href={github} className="text-gray-300 hover:text-[#64ffda]">
+            <a  target="_blank" 
+            rel="noopener noreferrer"  href={github} className="text-gray-300 hover:text-[#64ffda]">
               <Github className="w-6 h-6" />
             </a>
           )}
           {external && (
-            <a href={external} className="text-gray-300 hover:text-[#64ffda]">
+            <a  target="_blank" 
+            rel="noopener noreferrer"  href={external} className="text-gray-300 hover:text-[#64ffda]">
               <ExternalLink className="w-6 h-6" />
             </a>
           )}
