@@ -5,26 +5,6 @@ import AchievementCard from './ui/AchievementCard';
 
 const AchievementsSection = () => {
 
-  const education = {
-    schools: [
-      {
-        name: "Vellore Institute of Technology",
-        degree: "Bachelor of Computer Science",
-        date: "2018 - 2022",
-        cgpa: "8.26",
-        location: "Vellore, India",
-        highlights: "Specialized in information Security"
-      },
-      // {
-      //   name: "New Jersey Institute of Technology",
-      //   degree: "Master of Computer Science",
-      //   date: "2022 - 2024",
-      //   cgpa: "3.4",
-      //   location: "New Jersey, USA",
-      //   highlights: "Graduate studies focusing on Cloud Computing and Distributed Systems"
-      // },
-    ]
-  };
 
   const achievements = {
     competitions: [
@@ -141,35 +121,9 @@ const AchievementsSection = () => {
         </div>
       </div>
 
-      {/* Education Section */}
-      <div className="mt-16">
-        <h2 className="text-xl font-semibold text-gray-200 mb-8">EDUCATION</h2>
-        {education.schools.map((school, index) => (
-          <div key={index} className="group cursor-pointer mb-8">
-            <div className="flex items-start gap-3 transform transition-transform duration-300 group-hover:translate-x-2">
-              <span className="text-gray-400 group-hover:text-[#64ffda] text-lg">▹</span>
-              <div>
-                <h3 className="text-gray-200 text-lg font-medium group-hover:text-[#64ffda]">
-                  {school.name}
-                </h3>
-                <div className="text-gray-400 text-sm mt-2 space-y-1">
-                  <p className="font-medium">
-                    {school.degree} | {school.date}
-                  </p>
-                  <p className="italic">
-                    {school.location} • CGPA: {school.cgpa}
-                  </p>
-                  <p className="text-gray-500">
-                    {school.highlights}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
+      
     </section>
   );
-};
+};  
 
 export default AchievementsSection;

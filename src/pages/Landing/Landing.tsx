@@ -7,6 +7,7 @@ import Footer from "@/components/Footer"
 import Landing_section from "@/components/landing_section"
 import Navbar from "@/components/navbar"
 import ProjectsGrid from "@/components/ProjectsGrid"
+import SkillsSection from "@/components/SkillsSection"
 import Cover from "@/components/ui/cover"
 
 
@@ -19,6 +20,11 @@ const Landing = () => {
             <main className="px-5 md:px-[200px]">
                 <Landing_section />
                 <AboutSection />
+            {/* </main> */}
+
+                <SkillsSection />
+            {/* <main className="px-5 md:px-[200px]"> */}
+
                 <ExperienceSection />
                 <ProjectsGrid />
                 <AchievementsSection />

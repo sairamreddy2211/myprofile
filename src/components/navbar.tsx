@@ -6,10 +6,11 @@ import Hamburger from './ui/hamburger';
 const Navbar: React.FC = () => {
   const navItems = [
     { number: '01.', text: 'About' },
-    { number: '02.', text: 'Experience' },
-    { number: '03.', text: 'Work' },
-    { number: '04.', text: 'Recognition' },
-    { number: '05.', text: 'Contact' },
+    { number: '02.', text: 'Skill' },
+    { number: '03.', text: 'Experience' },
+    { number: '04.', text: 'Work' },
+    { number: '05.', text: 'Recognition' },
+    { number: '06.', text: 'Contact' },
   ];
 
   const [hidden, setHidden] = useState(false);

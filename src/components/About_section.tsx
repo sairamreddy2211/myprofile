@@ -3,11 +3,20 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   const technologies = [
-    ['Angular', 'React',"React Native"],
-    ['TS/JS (ES6+)', 'HTML/CSS SCSS'],
-    ['Android (kotlin)', 'Python',".NET"],
-    ['Node.js', 'MongoDB',"PostgreSQL"],
-    ['PWA', 'Module Federation','Flutter'],
+    // WEB
+    ['Angular', 'React', 'HTML/CSS/SCSS', 'JavaScript (ES6+)', 'TypeScript', 'Bootstrap', 'Next.js', 'Karma Testing Framework', 'Module Federation', 'PWA', 'Micro-Frontend Architecture'],
+
+    // APP
+    ['React Native (Intermediate)', 'Flutter (Basic)', 'Android Development', 'Kotlin (Intermediate)'],
+
+    // BACKEND & DATABASES
+    ['Node.js', 'Python', '.NET', 'MongoDB', 'PostgreSQL'],
+
+    // ARCHITECTURE & CONCEPTS
+    ['Scalable Architecture Design', 'Langchain', 'Effective Communication', 'Team Collaboration', 'Quick Learning', 'Analytical Thinking', 'Time Management', 'Adaptability', 'Research and Analysis'],
+
+    // TOOLS & UTILITIES
+    ['VSCode', 'GIT', 'Azure', 'Android Studio', 'Chrome DevTools', 'Mongo GUI', 'Swagger']
   ];
 
   return (
@@ -21,10 +30,10 @@ const AboutSection: React.FC = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Left column with text content */}
 
-        <div className="relative group">
+          <div className="relative group">
             <div className="relative rounded-lg overflow-hidden bg-[#64ffda] bg-opacity-10 w-full max-w-[320px] mx-auto">
               <img
-                src={`${import.meta.env.BASE_URL}spiderman.png`}  
+                src={`${import.meta.env.BASE_URL}spiderman.png`}
                 alt="Profile"
                 className="w-full h-auto rounded-lg  hover:mix-blend-normal transition-all duration-300"
               />
@@ -41,34 +50,35 @@ const AboutSection: React.FC = () => {
             <p className="font-calibre text-[17px] text-slate-400">
               Currently, I'm specializing in financial applications and PWA development at{' '}
               <a href="#" className="text-[#64ffda] hover:underline">Bajaj FinServ</a>
-              , where I craft solutions that impact millions of users daily. My framework-agnostic 
-              approach combined with full-stack capabilities allows me to create scalable 
+              , where I craft solutions that impact millions of users daily. My framework-agnostic
+              approach combined with full-stack capabilities allows me to create scalable
               architectures and excellent user experiences.
             </p>
 
-            <div className="pt-4">
-              <p className="font-calibre text-[17px] text-slate-300 mb-3">
-                Here are a few technologies I've been working with recently:
-              </p>
-              
-              <div className="grid grid-cols-3 gap-x-8 gap-y-2">
-                {technologies.map((row, rowIndex) => (
-                  <React.Fragment key={rowIndex}>
-                    {row.map((tech, techIndex) => (
-                      <div key={`${rowIndex}-${techIndex}`} className="flex items-center gap-2">
-                        <span className="text-[#64ffda]">▹</span>
-                        <span className="font-mono text-sm text-slate-400">{tech}</span>
-                      </div>
-                    ))}
-                  </React.Fragment>
-                ))}
-              </div>
-            </div>
+
           </div>
 
           {/* Right column with image */}
-          
+
         </div>
+        {/* <div className="pt-4">
+          <p className="font-calibre text-[17px] text-slate-300 mb-3">
+            Here are a few technologies I've been working with recently:
+          </p>
+
+          <div className="grid grid-cols-6 gap-x-8 gap-y-2">
+            {technologies.map((row, rowIndex) => (
+              <React.Fragment key={rowIndex}>
+                {row.map((tech, techIndex) => (
+                  <div key={`${rowIndex}-${techIndex}`} className="flex items-center gap-2">
+                    <span className="text-[#64ffda]">▹</span>
+                    <span className="font-mono text-sm text-slate-400">{tech}</span>
+                  </div>
+                ))}
+              </React.Fragment>
+            ))}
+          </div>
+        </div> */}
       </div>
     </section>
   );
