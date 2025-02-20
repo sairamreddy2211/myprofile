@@ -65,7 +65,7 @@ export const skilleducation = {
     education: {
         schools: [
             {
-                name: "Vellore Institute of Technology",
+                name: "Vellore Institute of Technology( VIT )",
                 degree: "Bachelor of Computer Science",
                 date: "2018 - 2022",
                 cgpa: "8.26",
