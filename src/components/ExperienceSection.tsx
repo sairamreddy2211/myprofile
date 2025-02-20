@@ -36,7 +36,7 @@ const ExperienceSection: React.FC = () => {
             <h2 className="font-calibre text-[22px] md:text-4xl text-slate-300 font-semibold">{experiences.sectionName}</h2>
             <div className="h-[1px] bg-slate-600 flex-grow ml-4"></div>
           </div>
-          <p className="font-mono text-slate-400 text-sm mt-2 ml-8">
+          <p className="font-mono text-slate-400 text-sm mt-2 ">
             Total Experience: {calculateTotalExperience}
           </p>
         </div>

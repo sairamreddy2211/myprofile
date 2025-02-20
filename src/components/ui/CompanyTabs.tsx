@@ -15,6 +15,40 @@ interface CompanyTabsProps {
   onTabSelect: (index: number) => void;
 }
 
+const calculateDateDifference = (company: typeof experiences.experiences[0]) => {
+  const { startDate, endDate } = company;
+  
+  // Calculate difference in milliseconds
+  const diffTime = endDate.getTime() - startDate.getTime();
+  
+  // Convert to days, months, years
+  const days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  const months = Math.floor(days / 30.44); // Average days in a month
+  const years = Math.floor(months / 12);
+  
+  // Calculate remaining months and days
+  const remainingMonths = months % 12;
+  const remainingDays = Math.floor(days % 30.44);
+  
+  // Build output string
+  let output = '';
+  
+  if (years > 0) {
+    output += `${years} year${years > 1 ? 's' : ''}`;
+    if (remainingMonths > 0) output += ` ${remainingMonths} month${remainingMonths > 1 ? 's' : ''}`;
+  } else if (months > 0) {
+    output += `${months} month${months > 1 ? 's' : ''}`;
+    if (remainingDays > 0) output += ` ${remainingDays} day${remainingDays > 1 ? 's' : ''}`;
+  } else {
+    output += `${days} day${days > 1 ? 's' : ''}`;
+  }
+  
+  return output;
+};
+
+// Usage example:
+
+
 const CompanyTabs: React.FC<CompanyTabsProps> = ({ 
   companies, 
   selectedTab, 
@@ -73,9 +107,16 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
               {companies[selectedTab].role}{' '}
               <span className="text-[#64ffda]">@ {companies[selectedTab].company}</span>
             </h3>
-            <p className="font-mono text-sm text-slate-400 mt-1">
+            <div className='flex gap-2 mt-2 flex-col md:flex-row'>
+            <p className="font-mono text-sm text-slate-400 ">
               {companies[selectedTab].date}
             </p>
+            <p className='text-slate-400 hidden md:block text-sm'>|</p>
+            <p className="font-mono text-sm text-slate-400">
+               {calculateDateDifference(companies[selectedTab])} of experience
+            </p>
+            </div>
+            
           </div>
 
           <ul className="space-y-4 mt-4">
