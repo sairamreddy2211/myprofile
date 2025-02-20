@@ -1,3 +1,4 @@
+import { navItems } from '@/config';
 import { motion } from 'framer-motion';
 const Cover = () => {
   const containerVariants = {
@@ -40,7 +41,7 @@ const Cover = () => {
             fill="currentColor"
             textAnchor="middle"
           >
-            S
+            {navItems.iconLogo}
           </text>
         </svg>
       </a>
