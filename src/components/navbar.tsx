@@ -2,16 +2,10 @@
 import React, { useState } from 'react';
 import { motion, MotionValue, useMotionValueEvent, useScroll } from 'framer-motion';
 import Hamburger from './ui/hamburger';
+import { navItems } from '@/config';
 
 const Navbar: React.FC = () => {
-  const navItems = [
-    { number: '01.', text: 'About' },
-    { number: '02.', text: 'Skill' },
-    { number: '03.', text: 'Experience' },
-    { number: '04.', text: 'Work' },
-    { number: '05.', text: 'Recognition' },
-    { number: '06.', text: 'Contact' },
-  ];
+
 
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();
@@ -72,7 +66,7 @@ const Navbar: React.FC = () => {
                 fill="currentColor"
                 textAnchor="middle"
               >
-                S
+                {navItems.iconLogo}
               </text>
             </svg>
           </a>
@@ -82,7 +76,7 @@ const Navbar: React.FC = () => {
           <Hamburger isclose={opensidebar} handleClick={handleClick} />
         </div>
         <div className="hidden md:flex items-center space-x-8">
-          {navItems.map((item, index) => (
+          {navItems.navItems.map((item, index) => (
             <a
               key={index}
               href={`#${item.text.toLowerCase()}`}
@@ -110,7 +104,7 @@ const Navbar: React.FC = () => {
       >
         <div className='h-full w-full bg-[#152a45] w-[200px] px-10'>
           <div className="flex flex-col justify-between gap-7 pt-[150px]">
-            {navItems.map((item, index) => (
+            {navItems.navItems.map((item, index) => (
               <a
                 key={index}
                 href={`#${item.text.toLowerCase()}`}

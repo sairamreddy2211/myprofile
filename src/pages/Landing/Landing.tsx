@@ -20,11 +20,7 @@ const Landing = () => {
             <main className="px-5 md:px-[200px]">
                 <Landing_section />
                 <AboutSection />
-            {/* </main> */}
-
                 <SkillsSection />
-            {/* <main className="px-5 md:px-[200px]"> */}
-
                 <ExperienceSection />
                 <ProjectsGrid />
                 <AchievementsSection />
