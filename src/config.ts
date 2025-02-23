@@ -127,6 +127,8 @@ export const experiences = {
             link: "#",
             role: "Software Engineer",
             date: "Feb 2023 - Present",
+            startDate:new Date('2023-02-06'),
+            endDate:new Date(),
             highlights: [
                 "Developed comprehensive Gold Loan System enhancing user management capabilities",
                 "Created Document Center for streamlined financial document access",
@@ -142,6 +144,8 @@ export const experiences = {
             link: "#",
             role: "Frontend Developer",
             date: "July 2022 - Nov 2022",
+            startDate: new Date('2022-07-01'),
+            endDate: new Date('2022-11-09'),
             highlights: [
                 "Created drag-and-drop interface for action building (call, mail, meet)",
                 "Reduced development time from 2 months to 1 day",
