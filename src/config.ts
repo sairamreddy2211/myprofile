@@ -156,7 +156,7 @@ export const experiences = {
 
 export const projects = {
     sectionNumber: "04.",
-    sectionName: "Where I've Worked",
+    sectionName: "My Projects",
     projects: [
         {
             title: "CodePlay 🎮",
