@@ -29,7 +29,8 @@ const Landing_section: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     const handleDownload = (format: string, theme: string) => {
-        const fileName = `SaiRamReddy_Resume_${theme === 'dark' ? 'Dark' : 'Light'}.${format}`;
+        const fileName = `SaiRamReddy_Resume.pdf`;
+        // const fileName = `SaiRamReddy_Resume_${theme === 'dark' ? 'Dark' : 'Light'}.${format}`;
         // Replace these with actual file paths
         const filePath = `${import.meta.env.BASE_URL}/resumes/${fileName}`;
         // Create a temporary link element
@@ -102,7 +103,11 @@ const Landing_section: React.FC = () => {
                             </svg>
                         </a>
                     </div>
-                    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+                     <button onClick={() => handleDownload('pdf', 'light')} className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3  font-mono text-sm text-[#22ea4b] border border-[#22ea4b] rounded hover:bg-[#22ea4b] hover:bg-opacity-10 transition-all duration-300">
+                                <Download size={16} />
+                                <span className='hidden md:inline'>Download Resume</span>
+                            </button>
+                    {/* <Dialog open={isOpen} onOpenChange={setIsOpen}>
                         <DialogTrigger asChild>
                             <button className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3  font-mono text-sm text-[#22ea4b] border border-[#22ea4b] rounded hover:bg-[#22ea4b] hover:bg-opacity-10 transition-all duration-300">
                                 <Download size={16} />
@@ -140,7 +145,7 @@ const Landing_section: React.FC = () => {
                                 </div>
                             </div>
                         </DialogContent>
-                    </Dialog>
+                    </Dialog> */}
                 </div>
             </div>
         </section>
