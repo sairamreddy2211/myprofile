@@ -53,9 +53,9 @@ export const ABOUT_SECTION_DATA = {
     title: "About Me",
     imagePath: "spiderman.png",
     imageAlt: "Profile",
-    paragraphs: [
-        "Hi! I'm a Software Developer based in Bangalore, with a unique journey that began through ethical hacking experiments.",
-        "Currently, I'm specializing in financial applications and PWA development at <a href='#' class='text-[#64ffda] hover:underline'>Bajaj FinServ</a>, where I craft solutions that impact millions of users daily. My framework-agnostic approach combined with full-stack capabilities allows me to create scalable architectures and excellent user experiences."
+    paragraphs: [ // Updated
+        "Hi! I'm Sai Ram Reddy, a full-stack engineer based in Bangalore with over 3 years of experience. My journey into software development was sparked by an early interest in ethical hacking, which evolved into a passion for building robust and user-centric applications.",
+        "Currently, as a Senior Software Engineer at <a href='https://www.bajajfinserv.in/' class='text-[#64ffda] hover:underline'>Bajaj FinServ</a>, I specialize in developing cutting-edge financial applications and PWAs. I leverage my expertise in Angular, React, Node.js, and mobile platforms to craft scalable architectures and deliver exceptional user experiences for millions of users."
     ]
 };
 
@@ -74,46 +74,46 @@ export const skilleducation = {
             }
         ]
     },
-    skillCategories: [
-        {
-            icon: "🌐",
-            title: "Web Technologies",
-            description: "Angular, React, HTML/CSS/SCSS, Next.js, Bootstrap",
-        },
+    skillCategories: [ // Updated and re-categorized based on resume
         {
             icon: "💻",
-            title: "Programming Languages",
-            description: "JavaScript (ES6+), TypeScript, Python",
+            title: "Frontend Development",
+            description: "Angular (v19, NgRx), React, Redux, Next.js, HTML5, CSS3, SCSS, Tailwind CSS, Bootstrap, JavaScript (ES6+), Web Sockets, WebRTC, Material-UI",
+        },
+        {
+            icon: "🗄️",
+            title: "Backend Development & Databases",
+            description: "Node.js, Express.js, .NET, RESTful APIs, MongoDB (Beginner), MySQL (Beginner)",
         },
         {
             icon: "📱",
             title: "Mobile Development",
-            description: "React Native, Flutter, Android, Kotlin",
+            description: "React Native, PWA, Flutter (Beginner), Android (Kotlin) (Beginner)",
         },
         {
-            icon: "🗄️",
-            title: "Backend & Databases",
-            description: "Node.js, .NET, MongoDB, PostgreSQL",
+            icon: "🏗️",
+            title: "Architectural Patterns & Design",
+            description: "Micro-Frontends, Module Federation, Scalable Systems, PWA, Responsive Design, User-Centric Design",
+        },
+        {
+            icon: "🛡️",
+            title: "Security Practices",
+            description: "JWT, CSRF Prevention, SQL Injection Mitigation, Data Encryption, Code Minification",
         },
         {
             icon: "🤖",
             title: "AI & Machine Learning",
-            description: "Langchain, RAG, OpenAI, Gemini AI",
-        },
-        {
-            icon: "🏗️",
-            title: "Architecture",
-            description: "PWA, Module Federation, Micro-Frontend, Scalable Design",
-        },
-        {
-            icon: "👥",
-            title: "Professional Skills",
-            description: "Team Collaboration, Quick Learning, Time Management",
+            description: "LangChain, Gemini AI, OpenAI, RAG",
         },
         {
             icon: "🛠️",
-            title: "Tools & Utilities",
-            description: "VSCode, Git, Azure, Chrome DevTools, Swagger",
+            title: "Dev Practices & Tools",
+            description: "Agile Methodologies, TDD, Code Reviews, Mentoring, Git, Docker, Azure, Webpack, VSCode, Swagger, CI/CD, Requirement Gathering & Analysis",
+        },
+        {
+            icon: "⌨️",
+            title: "Programming Languages",
+            description: "JavaScript (ES6+), TypeScript, Python",
         },
     ]
 };
@@ -122,36 +122,36 @@ export const experiences = {
     sectionNumber: "03.",
     sectionName: "Where I've Worked",
     experiences: [
-        {
+        { // Updated based on resume
             company: "Bajaj FinServ",
-            link: "#",
-            role: "Software Engineer",
+            link: "https://www.bajajfinserv.in/",
+            role: "Senior Software Engineer",
             date: "Feb 2023 - Present",
-            startDate:new Date('2023-02-06'),
-            endDate:new Date(),
+            startDate: new Date('2023-02-01'), // Updated
+            endDate: new Date(),
             highlights: [
-                "Developed comprehensive Gold Loan System enhancing user management capabilities",
-                "Created Document Center for streamlined financial document access",
-                "Optimized App Landing Page with advanced features like lazy loading and image caching",
-                "Implemented 25 different loan calculators improving conversion rates",
-                "Utilizing module federation and micro-frontend architecture for scalable solutions",
-                "Tech Stack: Angular, React, PWA, Module Federation",
-                "Impact: Serving over 50 million active users"
+                "Spearheaded end-to-end development of the 'Engineering CRM' platform (Angular 19, NgRx, ngPrime, Tailwind CSS).",
+                "Engineered secure JWT-based authentication, encrypted API communication, and robust encrypted data caching in IndexedDB.",
+                "Implemented comprehensive security protocols, including input validation (CSRF, SQL injection) and code minification.",
+                "Led UI/UX design, applying user research for intuitive interfaces and contributing to full-stack architectural decisions.",
+                "Developed dynamic Homepage for 50M+ users, reducing load time by 60% (lazy loading, image caching, preloading) and optimizing rendering (OnPush, route reuse).",
+                "Built a high-performance Android/iOS Progressive Web Application (PWA) using WebView with a native JavaScript bridge.",
+                "Pioneered Module Federation for financial calculators, reducing deployment cycle time by 40%.",
+                "Developed critical Document Center and Gold Loan System features, improving Net Promoter Score (NPS) by 35%.",
+                "Maintained 99.9% uptime for mission-critical applications serving over 50M+ users."
             ]
         },
-        {
-            company: "EPIKInDiFi",
-            link: "#",
+        { // Updated based on resume
+            company: "epikindifi",
+            link: "https://epikindifi.com/",
             role: "Frontend Developer",
-            date: "July 2022 - Nov 2022",
-            startDate: new Date('2022-07-01'),
-            endDate: new Date('2022-11-09'),
+            date: "Jan 2022 - Nov 2022", // Updated
+            startDate: new Date('2022-01-01'), // Updated
+            endDate: new Date('2022-11-30'), // Updated
             highlights: [
-                "Created drag-and-drop interface for action building (call, mail, meet)",
-                "Reduced development time from 2 months to 1 day",
-                "Implemented generic APIs for seamless action integration",
-                "Improved deployment efficiency by 90%",
-                "Tech Stack: Web technologies, API integration"
+                "Led front-end development for Yoma Bank’s digital banking platform using React and Angular.",
+                "Designed and implemented a comprehensive library of reusable UI components for web and mobile.",
+                "Achieved feature and UX parity between web and mobile banking workflows via a unified design system."
             ]
         }
     ]
@@ -173,6 +173,12 @@ export const projects = {
             description: "Gift platform generating personalized maps with Spotify song QR codes and custom notes. Perfect for sharing musical memories.",
             tech: ["Wix", "JavaScript", "Spotify API", "Cron Jobs"],
             external: "https://www.pinenlime.com/memory-mapper"
+        },
+        {
+            title: "ODC Dashboard 🤖", // New from resume
+            description: "LLM-powered chatbot integrating LangChain and Gemini with socket streaming for real-time interactions.",
+            tech: ["LangChain", "Gemini AI", "WebSockets", "Node.js", "React"], // Inferred tech
+            github: "" // No public link in resume
         },
         // {
         //   title: "CSS Journey 🎨",
@@ -287,7 +293,7 @@ export const achievements = {
 };
 
 export const CONTACT_SECTION_DATA = {
-    sectionNumber: "05",
+    sectionNumber: "06",
     title: "What's Next?",
     subtitle: "Get In Touch",
     description: "Although I'm not currently looking for any new opportunities, because I am too busy to save the world. My inbox is always open. Whether you have a question or just want to say hi, I'll try my best to get back to you!",
