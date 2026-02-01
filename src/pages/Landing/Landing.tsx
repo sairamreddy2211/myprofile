@@ -2,7 +2,6 @@ import AboutSection from "@/components/About_section"
 import AchievementsSection from "@/components/AchievementsSection"
 import ConnectIcons from "@/components/ConnectIcons"
 import ContactSection from "@/components/ContactSection"
-import CSSShowcase from "@/components/CSSShowcase"
 import ExperienceSection from "@/components/ExperienceSection"
 import Footer from "@/components/Footer"
 import Landing_section from "@/components/landing_section"
@@ -25,7 +24,6 @@ const Landing = () => {
                 <ExperienceSection />
                 <ProjectsGrid />
                 <AchievementsSection />
-                <CSSShowcase />  
                 <ContactSection />
                 <Footer />
             </main>

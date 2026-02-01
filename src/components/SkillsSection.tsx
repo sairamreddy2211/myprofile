@@ -48,11 +48,14 @@ const SkillsSection = () => {
                       {school.degree} | {school.date}
                     </p>
                     <p className="italic">
-                      {school.location} • CGPA: {school.cgpa}
+                      {school.location}
+                      {school.cgpa ? ` • CGPA: ${school.cgpa}` : ''}
                     </p>
-                    <p className="text-slate-500">
-                      {school.highlights}
-                    </p>
+                    {school.highlights && (
+                      <p className="text-slate-500">
+                        {school.highlights}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>

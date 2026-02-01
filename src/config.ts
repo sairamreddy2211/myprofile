@@ -5,47 +5,53 @@ export const SOCIAL_ICONS = {
     email: "M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"
 };
 
+/** Resume file in public/resumes/. Change fileName when you add or rename your resume. */
+export const RESUME_DOWNLOAD = {
+  /** Filename of the resume in the public/resumes/ folder */
+  fileName: "FS_TX_Developer_Lakshman_N .pdf",
+  /** Optional: name used when saving the file (defaults to fileName if not set) */
+  downloadAs: "Lakshman_Nadipilli_Resume.pdf",
+};
+
 export const LANDING_SECTION_DATA = {
     greeting: {
         preTitle: "Hi, my name is",
-        name: "Sai Ram.",
-        fullname:"Sai Rama Reddy",
-        title: "Full-stack Software Engineer",
+        name: "Lakshman.",
+        fullname: "Lakshman Kumar Nadipilli",
+        title: "Java Full Stack Developer",
         emoji: {
-            symbol: "🚀",
-            ariaLabel: "rocket"
+            symbol: "☕",
+            ariaLabel: "coffee"
         }
     },
-    description: "I'm a full-stack software engineer with 3+ years of experience in architecting and developing scalable, secure, and high-performance applications. I specialize in Angular, React, Flutter, Node.js, and .NET technologies.",
+    description: "Java Full Stack Developer with nearly 4 years of experience building scalable, cloud-native web applications using Java, Spring Boot, React.js, and AWS. Proven expertise in RESTful APIs, microservices, CI/CD, and secure application design within e-commerce, HR tech, and financial domains.",
     socialLinks: {
         github: {
-            url: "https://github.com/sairamreddy2211",
+            url: "https://github.com/Lakshman-Nadipilli",
             ariaLabel: "GitHub Profile"
         },
         linkedin: {
-            url: "https://www.linkedin.com/in/sai-rama-reddy-padala-386a1a19a/",
+            url: "https://www.linkedin.com/in/lakshman-nadipilli",
             ariaLabel: "LinkedIn Profile"
         },
         email: {
-            address: "sairamreddy2211@gmail.com",
+            address: "nadipillilakshmankumar@gmail.com",
             ariaLabel: "Email Contact"
         }
     }
 };
 
-
-export const navItems = { 
-    iconLogo:"S", // this is the 1st  letter of person name
+export const navItems = {
+    iconLogo: "L",
     navItems: [
-    { number: '01.', text: 'About' },
-    { number: '02.', text: 'Skill' },
-    { number: '03.', text: 'Experience' },
-    { number: '04.', text: 'Work' },
-    { number: '05.', text: 'Recognition' },
-    { number: '06.', text: 'Contact' },
-  ]
+        { number: '01.', text: 'About' },
+        { number: '02.', text: 'Skill' },
+        { number: '03.', text: 'Experience' },
+        { number: '04.', text: 'Work' },
+        { number: '05.', text: 'Recognition' },
+        { number: '06.', text: 'Contact' },
+    ]
 };
-
 
 export const ABOUT_SECTION_DATA = {
     sectionNumber: "01",
@@ -53,8 +59,8 @@ export const ABOUT_SECTION_DATA = {
     imagePath: "spiderman.png",
     imageAlt: "Profile",
     paragraphs: [
-        "I'm a full-stack software engineer with 3+ years of experience in architecting and developing scalable, secure, and high-performance applications. My expertise spans across modern web technologies, cloud solutions, and mobile development.",
-        "Currently, as a Senior Software Engineer at <a href='https://www.bajajfinserv.in/' class='text-[#64ffda] hover:underline'>Bajaj FinServ</a>, I lead the development of enterprise-grade FinTech applications, focusing on performance optimization, security, and exceptional user experience. I'm passionate about GenAI, clean architecture, and creating impactful solutions that serve millions of users."
+        "I'm a Java Full Stack Developer with nearly 4 years of combined professional and project experience building scalable, cloud-native web applications using Java, Spring Boot, React.js, and AWS. I specialize in designing RESTful APIs, developing end-to-end full stack features, integrating third-party services, and deploying applications via CI/CD pipelines.",
+        "Currently, as a Java Full Stack Developer at <a href='https://www.fidelity.com/' class='text-[#64ffda] hover:underline'>Fidelity Investments</a> in Westlake, TX, I design and develop scalable backend services supporting high-volume financial reporting and transaction workflows. I'm passionate about Agile development, performance optimization, secure application design, and collaborating with cross-functional teams to translate business requirements into high-quality technical solutions."
     ]
 };
 
@@ -64,55 +70,59 @@ export const skilleducation = {
     education: {
         schools: [
             {
-                name: "Vellore Institute of Technology ( VIT )",
-                degree: "B.Tech in Computer Science and Engineering",
-                date: "2018 - 2022",
-                cgpa: "8.26",
-                location: "Vellore, India",
-                highlights: "Specialization: Information Security"
+                name: "Illinois Institute of Technology",
+                degree: "Master of Science, Computer Science",
+                date: "May 2025",
+                location: "Chicago, IL"
+            },
+            {
+                name: "GMR Institute of Technology",
+                degree: "Bachelor of Technology, Computer Science and Engineering",
+                date: "May 2022",
+                location: "India"
             }
         ]
     },
     skillCategories: [
         {
             icon: "💻",
-            title: "Frontend Development",
-            description: "Angular (up to v19), React, Next.js, NgRx, Redux, Tailwind CSS, SCSS, Bootstrap, Material-UI, PWA"
+            title: "Programming Languages",
+            description: "Java, SQL, Python, JavaScript, HTML, CSS"
         },
         {
-            icon: "🗄️",
-            title: "Backend Development",
-            description: "Node.js, Express.js, .NET Core, RESTful APIs, Microservices Architecture"
-        },
-        {
-            icon: "📱",
-            title: "Mobile Development",
-            description: "React Native, Flutter, PWA with WebView integration"
-        },
-        {
-            icon: "🛢️",
-            title: "Databases",
-            description: "MySQL, IndexedDB, NoSQL, MongoDB, Local/Session Storage"
+            icon: "⚙️",
+            title: "Frameworks & Libraries",
+            description: "Spring Boot, Angular, React.js, Bootstrap, Hibernate, JUnit"
         },
         {
             icon: "☁️",
             title: "Cloud & DevOps",
-            description: "Azure, Docker, Git, CI/CD, Webpack"
+            description: "AWS (Lambda, S3, SNS, ECS, EC2), Docker, Jenkins, Git, GitHub Actions (CI/CD)"
         },
         {
-            icon: "🛡️",
-            title: "Security",
-            description: "JWT, OAuth, CSRF Prevention, SQL Injection Mitigation, Encryption"
+            icon: "🛢️",
+            title: "Databases",
+            description: "MySQL, DynamoDB, PostgreSQL"
+        },
+        {
+            icon: "🔧",
+            title: "Backend & Architecture",
+            description: "Microservices, REST API Design, OAuth 2.0, JWT, MVC Architecture, Design Patterns"
+        },
+        {
+            icon: "📊",
+            title: "Monitoring & Automation",
+            description: "AWS CloudWatch, ServiceNow (SNOW), Postman, JMeter"
         },
         {
             icon: "🤖",
-            title: "AI & Emerging Tech",
-            description: "TensorFlow.js, WebSockets, WebRTC, Web Workers, VSCode Extensions"
+            title: "Machine Learning",
+            description: "Python (NumPy, Pandas) — project-level exposure"
         },
         {
             icon: "⌨️",
-            title: "Programming Languages",
-            description: "JavaScript, TypeScript, Python, C#, HTML5, CSS3"
+            title: "Methodologies & Soft Skills",
+            description: "Agile (Scrum), Team collaboration, Problem-solving"
         }
     ]
 };
@@ -122,38 +132,54 @@ export const experiences = {
     sectionName: "Where I've Worked",
     experiences: [
         {
-            company: "Bajaj FinServ",
-            link: "https://www.bajajfinserv.in/",
-            role: "Senior Software Engineer",
-            date: "Feb 2023 - Present",
-            startDate: new Date('2023-02-01'),
+            company: "Fidelity Investments",
+            link: "https://www.fidelity.com/",
+            role: "Java Full Stack Developer",
+            date: "June 2024 – Present",
+            startDate: new Date('2024-06-01'),
             endDate: new Date(),
             highlights: [
-                "Architected and maintained Angular 19-based CRM platforms with JWT auth, IndexedDB caching, and NgRx state management",
-                "Built a Flutter-based internal tool with WebRTC video calling capability to enable faster face-to-face interactions between customer service agents and remote support teams",
-                "Migrated legacy mobile app to PWA with WebView-JS bridge for 50M+ users, improving load speed by 60% and reducing crash rates",
-                "Built enterprise-grade FinTech apps using Angular, RxJS, Tailwind, and lazy loading to optimize performance",
-                "Developed real-time toxic content filtering using TensorFlow.js and AI models",
-                "Led CI/CD automation pipelines and module federation setup to reduce deployment time by 40%",
-                "Delivered Gold Loan/Document Centre modules, improving NPS by 35%",
-                "Ensured 99.9% app uptime with efficient system design and scalable microservices",
-                "Developed .NET-based backend services using clean architecture with encrypted API request/response, MSAL auth, and Azure Blob Storage integration"
+                "Designed and developed scalable backend services using Java and Spring Boot, supporting high-volume financial reporting and transaction workflows.",
+                "Built and maintained RESTful APIs to process, validate, and persist financial transaction data across microservices deployed on AWS ECS.",
+                "Engineered serverless backend components using AWS Lambda, integrating them with Spring Boot microservices for automated report generation and data validation.",
+                "Implemented secure role-based access control (RBAC) using IAM and application-level authorization, ensuring compliance with financial data security standards.",
+                "Integrated backend services with AWS S3 for structured file ingestion, transformation, and lifecycle management.",
+                "Enhanced application reliability by implementing centralized logging, error handling, and performance monitoring, improving system uptime by 20%.",
+                "Automated application deployments using GitHub Actions CI/CD pipelines, reducing release cycles by 25%.",
+                "Collaborated closely with frontend and DevOps teams in an Agile/Scrum environment, contributing to sprint planning, code reviews, and production releases.",
+                "Optimized backend service performance and reduced latency through efficient API design, asynchronous processing, and resource tuning."
             ]
         },
         {
-            company: "epikindifi",
-            link: "https://epikindifi.com/",
-            role: "Frontend + Flutter Developer",
-            date: "Jan 2022 - Nov 2022",
-            startDate: new Date('2022-01-01'),
-            endDate: new Date('2022-11-30'),
+            company: "WIPRO Ltd.",
+            link: "https://www.wipro.com/",
+            role: "Project Engineer (Java Full Stack Developer)",
+            date: "September 2022 – July 2023",
+            startDate: new Date('2022-09-01'),
+            endDate: new Date('2023-07-31'),
             highlights: [
-                "Built unified frontend for Yoma Bank using Angular, React, and Flutter, delivering consistent UI/UX across platforms",
-                "Developed reusable UI component library across mobile and web platforms",
-                "Implemented key mobile banking flows using Flutter and ensured API integration across platforms",
-                "Created backend APIs using Node.js/Express, integrating middleware, encryption, and MSAL authentication",
-                "Worked with Azure Blob Storage to store secure customer documents",
-                "Set up clean architecture in Flutter projects for scalable and maintainable development"
+                "Developed and enhanced core modules of the Bullhorn ATS using Java, Spring Boot, and React.js, increasing recruiter productivity by 30% through automation and intuitive UI design.",
+                "Integrated third-party APIs for resume parsing, email notifications, and secure authentication via OAuth 2.0, streamlining external service connectivity and improving user flow.",
+                "Engineered scalable React.js dashboards for enterprise analytics and recruiter workflows, improving UI efficiency and cross-module consistency by 25%.",
+                "Optimized backend service performance by fine-tuning SQL queries and introducing asynchronous processing, lowering overall API response latency by 20%.",
+                "Automated the complete build, testing, and deployment lifecycle using Jenkins CI/CD pipelines, minimizing deployment errors and reducing release turnaround time by 25%.",
+                "Collaborated in Agile sprints with cross-functional teams, actively leading code reviews and maintaining consistent coding standards to ensure on-time, high-quality feature delivery."
+            ]
+        },
+        {
+            company: "Ajio E-Commerce Platform",
+            link: "https://www.ajio.com/",
+            role: "Java Full Stack Developer Intern",
+            date: "May 2021 – August 2022",
+            startDate: new Date('2021-05-01'),
+            endDate: new Date('2022-08-31'),
+            highlights: [
+                "Architected and implemented a high-performance e-commerce platform backend using Java, Spring Boot, and MySQL, enabling secure product listings, cart management, and seamless online transactions.",
+                "Implemented RESTful APIs for inventory, orders, and customer management, and integrated Razorpay and Stripe payment gateways, automating order-confirmation emails via AWS SES.",
+                "Refined and optimized SQL indexing and query plans to drastically reduce database load, resulting in improved page response times by 22%.",
+                "Integrated a product-recommendation feature using a Python microservice (API-driven ML model), which successfully increased cross-sell conversions by 18%.",
+                "Designed an analytics dashboard with React Charts for real-time sales and user insights, enhancing UI/UX with responsive components, leading to a 15% improvement in average session duration.",
+                "Conducted rigorous load testing with Postman and JMeter, enhancing system stability and deploying microservices on AWS EC2 via Docker to achieve 99.9% uptime during promotions."
             ]
         }
     ]
@@ -161,56 +187,24 @@ export const experiences = {
 
 export const projects = {
     sectionNumber: "04.",
-    sectionName: "My Projects",
+    sectionName: "Key Work & Projects",
     projects: [
         {
-            title: "RooCode 🤖",
-            description: "Contributed to RooCode, a GitHub Copilot-like VSCode extension built on Next.js. Implemented retry mechanism for Mermaid diagrams and improved chat interface.",
-            tech: ["Next.js", "TypeScript", "VSCode Extension API", "LLM Integration"],
-            github: "https://github.com/RooCodeInc/Roo-Code",
-            isOpenSource: true
-        },
-        {
-            title: "ODC Dashboard 🤖",
-            description: "AI-powered LangChain + Gemini chatbot with real-time streaming for dynamic interactions and intelligent responses.",
-            tech: ["LangChain", "Gemini AI", "WebSockets", "Node.js", "React"],
+            title: "Financial Reporting & Transaction Services",
+            description: "Scalable backend services and RESTful APIs for financial reporting and transaction workflows on AWS ECS. Serverless components with AWS Lambda, S3 integration, RBAC, and GitHub Actions CI/CD.",
+            tech: ["Java", "Spring Boot", "AWS ECS", "Lambda", "S3", "REST APIs", "CI/CD"],
             github: "#"
         },
         {
-            title: "PipeCode LMS 📚",
-            description: "Co-developing a modern open-source LMS inspired by Open edX, built with Angular micro-frontends architecture (private, will be public after initial setup).",
-            tech: ["Angular", "Micro-frontends", "Module Federation", "TypeScript"],
-            github: "#",
-            isOpenSource: true
+            title: "Bullhorn ATS Core Modules",
+            description: "Core modules of enterprise ATS with resume parsing, OAuth 2.0, and React.js dashboards. Jenkins CI/CD and SQL/async optimizations for recruiter productivity.",
+            tech: ["Java", "Spring Boot", "React.js", "OAuth 2.0", "Jenkins", "REST APIs"],
+            github: "#"
         },
         {
-            title: "Memory Mapper 🎵",
-            description: "Musical memory platform with Spotify integration for sharing personalized song maps and memories.",
-            tech: ["React", "Spotify API", "Node.js", "MongoDB"],
-            external: "https://www.pinenlime.com/memory-mapper"
-        },
-        {
-            title: "Barter Hub 🔄",
-            description: "Real-time cross-platform barter system enabling users to exchange goods without monetary transactions.",
-            tech: ["React Native", "Firebase", "Real-time Database"],
-            github: "https://github.com/sairamreddy2211/barter"
-        },
-        {
-            title: "Business Decode 💡",
-            description: "Platform connecting business students with shop owners for real-world problem-solving and entrepreneurship.",
-            tech: ["React Native", "Firebase", ".NET"],
-            github: "https://github.com/sairamreddy2211/Business_decode"
-        },
-        {
-            title: "Code Play 🎮",
-            description: "Real-time HTML/CSS/JS compiler using vanilla JavaScript with live preview functionality.",
-            tech: ["JavaScript", "CodeMirror", "Web Workers"],
-            github: "https://github.com/sairamreddy2211/html-css-js-compiler"
-        },
-        {
-            title: "Video Call App 📹",
-            description: "Flutter web app using WebRTC for real-time video calling across browsers with seamless connectivity.",
-            tech: ["Flutter", "WebRTC", "WebSockets"],
+            title: "Ajio E-Commerce Platform",
+            description: "E-commerce backend with product/cart/orders, Razorpay & Stripe, AWS SES. Python ML recommendation microservice, React Charts analytics, Docker on AWS EC2.",
+            tech: ["Java", "Spring Boot", "React", "MySQL", "Python", "AWS SES", "Docker"],
             github: "#"
         }
     ]
@@ -219,78 +213,29 @@ export const projects = {
 export const achievements = {
     competitions: [
         {
-            title: "Prodigy Award",
-            subtitle: "Web and mobile innovation at Bajaj FinServ",
-            link: "https://www.linkedin.com/posts/sai-rama-reddy-padala-386a1a19a_prodigyaward-webdevelopment-mobileappdevelopment-activity-7297865419078479873-4t_I"
-        },
-        {
-            title: "Heroes Award",
-            subtitle: "Company-wide innovation contest winner",
-            link: "https://www.linkedin.com/posts/sai-rama-reddy-padala-386a1a19a_certificateofachievement-exceptionalperformance-activity-7123517787309805569-IEPQ"
-        },
-        {
-            title: "Kudos Award",
-            subtitle: "Recognized for outstanding delivery",
-            link: "https://www.linkedin.com/posts/sai-rama-reddy-padala-386a1a19a_certificateofachievement-exceptionalperformance-activity-7090257622511095808-DzH6"
-        },
-        {
-            title: "Duothon Hackathon",
-            subtitle: "1st Prize Winner"
-        },
-        {
-            title: "7-minute Plank Challenge",
-            subtitle: "3rd Prize Winner"
-        },
-        {
-            title: "CTF Finalist",
-            subtitle: "Top 30 in Bajaj Group cybersecurity challenge"
+            title: "YOLO-based Object Detection for Self-Driving Cars",
+            subtitle: "Journal of Advanced Research in Automotive Tech (2021)",
+            link: "#"
         }
     ],
     certifications: [
         {
-            title: "Python Bootcamp",
-            subtitle: "Udemy",
-            link: "https://www.udemy.com/certificate/UC-446c2a11-263b-4de8-a186-1efb3f580976/"
+            title: "Java Full Stack",
+            subtitle: "StackRoute",
+            link: "#"
         },
         {
-            title: "Ethical Hacking in Python",
-            subtitle: "Udemy",
-            link: "https://www.udemy.com/certificate/UC-fd9dce4f-42c3-43f5-8d10-2e640ab210c7/"
+            title: "Machine Learning",
+            subtitle: "Internshala",
+            link: "#"
         },
         {
-            title: "React + Next.js 2025",
-            subtitle: "Udemy",
-            link: "https://www.udemy.com/certificate/UC-8e2ae683-5a24-43ac-9c89-5e4c7802e7e1/"
-        },
-        {
-            title: "Android Kotlin Masterclass",
-            subtitle: "Udemy",
-            link: "https://www.udemy.com/certificate/UC-33efff4b-c33e-4c0c-896b-52a99614c20f/"
-        },
-        {
-            title: "Web Development Bootcamp",
-            subtitle: "Udemy",
-            link: "https://www.udemy.com/certificate/UC-01499b43-1544-41ae-9b9c-f132814771c0/"
-        },
-        {
-            title: "Full Stack Development",
-            subtitle: "EC-Council"
+            title: "Foundations of AI",
+            subtitle: "SkillUp India",
+            link: "#"
         }
     ],
-    philanthropy: [
-        {
-            title: "Lead Organizer of a Blood Donation Drive",
-            subtitle: "Oversaw close to 1000+ students actively participating in the Donation Drive which was organized at Sagar Hospitals, Bengaluru."
-        },
-        {
-            title: "Development of Calamity Control",
-            subtitle: "A project created at the nick of time to crowd-source disaster information and get a more detailed area-by-area view on the safezones of a calamity struck area."
-        },
-        {
-            title: "Development of ChennaiRains.org",
-            subtitle: "A crowd-sourced repository of information created overnight that was used at a time of dire need by many people stranded in the floods."
-        }
-    ]
+    philanthropy: []
 };
 
 export const CONTACT_SECTION_DATA = {
@@ -299,8 +244,8 @@ export const CONTACT_SECTION_DATA = {
     subtitle: "Get In Touch",
     description: "I'm always open to discussing new opportunities, innovative projects, or just having a friendly chat about technology and development. Feel free to reach out!",
     contactInfo: {
-        email: "sairamreddy2211@gmail.com",
-        phone: "+91 7981615426"
+        email: "nadipillilakshmankumar@gmail.com",
+        phone: "312-868-9952"
     },
     buttonText: "Say Hello"
 };

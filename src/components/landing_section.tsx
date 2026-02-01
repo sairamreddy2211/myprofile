@@ -1,4 +1,4 @@
-import { LANDING_SECTION_DATA, SOCIAL_ICONS } from '@/config';
+import { LANDING_SECTION_DATA, RESUME_DOWNLOAD, SOCIAL_ICONS } from '@/config';
 import React, { useState } from 'react';
 import { Download, FileText, File, Moon, Sun } from 'lucide-react';
 import {
@@ -28,19 +28,16 @@ const Landing_section: React.FC = () => {
     const { greeting, description, socialLinks } = LANDING_SECTION_DATA;
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleDownload = (format: string, theme: string) => {
-        const fileName = `SaiRamReddy_Resume.pdf`;
-        // const fileName = `SaiRamReddy_Resume_${theme === 'dark' ? 'Dark' : 'Light'}.${format}`;
-        // Replace these with actual file paths
+    const handleDownload = () => {
+        const fileName = RESUME_DOWNLOAD.fileName;
+        const downloadAs = RESUME_DOWNLOAD.downloadAs ?? fileName;
         const filePath = `${import.meta.env.BASE_URL}/resumes/${fileName}`;
-        // Create a temporary link element
         const link = document.createElement('a');
         link.href = filePath;
-        link.download = fileName;
+        link.download = downloadAs;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-
         setIsOpen(false);
     };
 
