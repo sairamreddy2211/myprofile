@@ -14,11 +14,11 @@ const ResumeOption = ({ icon: Icon, title, subtitle, onClick }) => (
         onClick={onClick}
         className="flex items-start gap-4 p-4 rounded-lg hover:bg-slate-800 transition-colors w-full text-left group"
     >
-        <div className="p-2 rounded-full bg-[#22ea4b] bg-opacity-10 group-hover:bg-opacity-20 transition-all">
-            <Icon className="w-6 h-6 text-[#22ea4b] group-hover:scale-110 transition-transform" />
+        <div className="p-2 rounded-full bg-site-orange bg-opacity-10 group-hover:bg-opacity-20 transition-all">
+            <Icon className="w-6 h-6 text-site-orange group-hover:scale-110 transition-transform" />
         </div>
         <div>
-            <h3 className="text-md text-slate-900 group-hover:text-[#22ea4b] transition-colors">{title}</h3>
+            <h3 className="text-md text-slate-900 group-hover:text-site-orange transition-colors">{title}</h3>
             <p className="text-sm text-slate-400 group-hover:text-slate-300 transition-colors">{subtitle}</p>
         </div>
     </button>
@@ -42,9 +42,9 @@ const Landing_section: React.FC = () => {
     };
 
     return (
-        <section className="min-h-screen flex flex-col justify-center px-6 bg-[#0a192f]">
+        <section className="min-h-screen flex flex-col justify-center px-6 bg-site-bg">
             <div className="space-y-5">
-                <p className="font-mono text-[#00caf9] text-[13px] md:text-lg pt-16 md:pt-0">
+                <p className="font-mono text-site-orange text-[13px] md:text-lg pt-16 md:pt-0">
                     {greeting.preTitle}
                 </p>
 
@@ -52,7 +52,7 @@ const Landing_section: React.FC = () => {
                     {greeting.name}
                 </h1>
 
-                <h2 className="flex items-center font-calibre font-bold text-[40px] md:text-6xl text-[#22ea4b]">
+                <h2 className="flex items-center font-calibre font-bold text-[40px] md:text-6xl text-site-orange">
                     {greeting.title}
                     <span className="ml-4">
                         <span role="img" aria-label={greeting.emoji.ariaLabel} className="text-4xl">
@@ -75,7 +75,7 @@ const Landing_section: React.FC = () => {
                             rel="noopener noreferrer"
                             className="p-4 hover:translate-y-[-2px] transition-transform"
                         >
-                            <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+                            <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
                                 <path d={SOCIAL_ICONS.github} />
                             </svg>
                         </a>
@@ -85,7 +85,7 @@ const Landing_section: React.FC = () => {
                             rel="noopener noreferrer"
                             className="p-4 hover:translate-y-[-2px] transition-transform"
                         >
-                            <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+                            <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
                                 <path d={SOCIAL_ICONS.linkedin} />
                             </svg>
                         </a>
@@ -95,18 +95,18 @@ const Landing_section: React.FC = () => {
                             rel="noopener noreferrer"
                             className="p-4 hover:translate-y-[-2px] transition-transform"
                         >
-                            <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+                            <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
                                 <path d={SOCIAL_ICONS.email} />
                             </svg>
                         </a>
                     </div>
-                     <button onClick={() => handleDownload('pdf', 'light')} className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3  font-mono text-sm text-[#22ea4b] border border-[#22ea4b] rounded hover:bg-[#22ea4b] hover:bg-opacity-10 transition-all duration-300">
+                     <button onClick={() => handleDownload('pdf', 'light')} className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3 font-mono text-sm text-site-orange border border-site-orange rounded hover:bg-site-orange hover:bg-opacity-10 transition-all duration-300">
                                 <Download size={16} />
                                 <span className='hidden md:inline'>Download Resume</span>
                             </button>
                     {/* <Dialog open={isOpen} onOpenChange={setIsOpen}>
                         <DialogTrigger asChild>
-                            <button className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3  font-mono text-sm text-[#22ea4b] border border-[#22ea4b] rounded hover:bg-[#22ea4b] hover:bg-opacity-10 transition-all duration-300">
+                            <button className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3 font-mono text-sm text-site-accent border border-site-accent rounded hover:bg-site-accent hover:bg-opacity-10 transition-all duration-300">
                                 <Download size={16} />
                                 <span className='hidden md:inline'>Download Resume</span>
                             </button>

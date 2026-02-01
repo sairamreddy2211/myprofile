@@ -13,7 +13,7 @@ const ConnectIcons: React.FC = () => {
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
       >
-        <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+        <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
           <path d={SOCIAL_ICONS.github} />
         </svg>
       </a>
@@ -23,7 +23,7 @@ const ConnectIcons: React.FC = () => {
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
       >
-        <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+        <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
           <path d={SOCIAL_ICONS.linkedin} />
         </svg>
       </a>
@@ -33,7 +33,7 @@ const ConnectIcons: React.FC = () => {
         rel="noopener noreferrer"
         className="p-4 hover:translate-y-[-2px] transition-transform"
       >
-        <svg className="w-6 h-6 text-slate-400 hover:text-[#22ea4b]" viewBox="0 0 24 24" fill="currentColor">
+        <svg className="w-6 h-6 text-slate-400 hover:text-site-orange" viewBox="0 0 24 24" fill="currentColor">
           <path d={SOCIAL_ICONS.email} />
         </svg>
       </a>

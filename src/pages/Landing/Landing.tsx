@@ -13,7 +13,7 @@ import Cover from "@/components/ui/cover"
 
 const Landing = () => {
     return (
-        <div className="bg-[#0a192f] min-h-screen w-full overflow-hidden">
+        <div className="bg-site-bg min-h-screen w-full overflow-hidden">
             <Cover />
             <Navbar />
             <ConnectIcons />

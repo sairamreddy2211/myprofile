@@ -18,12 +18,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   isOpenSource 
 }) => {
   return (
-    <div className="bg-[#112240] rounded-lg p-8 hover:translate-y-[-5px] transition-transform">
+    <div className="bg-site-surface rounded-lg p-8 hover:translate-y-[-5px] transition-transform">
       <div className="flex justify-between items-start mb-6">
         <div className="flex items-center gap-4">
-          <Folder className="w-10 h-10 text-[#64ffda]" />
+          <Folder className="w-10 h-10 text-site-accent" />
           {isOpenSource && (
-            <span className="text-xs font-mono px-2 py-1 rounded-full bg-[#64ffda] bg-opacity-10 text-[#64ffda]">
+            <span className="text-xs font-mono px-2 py-1 rounded-full bg-site-accent bg-opacity-10 text-site-accent">
               Open Source
             </span>
           )}
@@ -31,13 +31,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         <div className="flex gap-4">
           {github && (
             <a  target="_blank" 
-            rel="noopener noreferrer"  href={github} className="text-gray-300 hover:text-[#64ffda]">
+            rel="noopener noreferrer"  href={github} className="text-gray-300 hover:text-site-accent">
               <Github className="w-6 h-6" />
             </a>
           )}
           {external && (
             <a  target="_blank" 
-            rel="noopener noreferrer"  href={external} className="text-gray-300 hover:text-[#64ffda]">
+            rel="noopener noreferrer"  href={external} className="text-gray-300 hover:text-site-accent">
               <ExternalLink className="w-6 h-6" />
             </a>
           )}

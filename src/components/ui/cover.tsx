@@ -26,7 +26,7 @@ const Cover = () => {
       times: [0, 1]  // firstAnimation starts at 0, secondAnimation at 1
     }}
     className="h-screen w-screen fixed z-[100] flex items-center justify-center">
-      <a href="/" className="text-[#00caf9] w-12 h-12">
+      <a href="/" className="text-site-orange w-12 h-12">
         <svg viewBox="0 0 100 100" className="w-full h-full">
           <polygon
             points="50,5 95,25 95,75 50,95 5,75 5,25"

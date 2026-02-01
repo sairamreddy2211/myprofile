@@ -63,7 +63,7 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
         
         {/* Animated highlight line */}
         <motion.div
-          className="absolute left-0 w-[2px] bg-[#64ffda] hidden md:block"
+          className="absolute left-0 w-[2px] bg-site-accent hidden md:block"
           initial={{ height: `${100 / companies.length}%` }}
           animate={{
             y: `${selectedTab * 100}%`,
@@ -82,7 +82,7 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
             <button
               key={company.company}
               className={`relative px-5 py-4 text-left min-w-max md:min-w-[240px] hover:bg-slate-700/20 transition-colors
-                ${selectedTab === index ? 'bg-slate-800/50 text-[#64ffda]' : 'text-slate-400'}`}
+                ${selectedTab === index ? 'bg-slate-800/50 text-site-accent' : 'text-slate-400'}`}
               onClick={() => onTabSelect(index)}
             >
               <span className={`font-mono text-base ${selectedTab === index ? 'font-medium' : ''}`}>
@@ -105,7 +105,7 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
           <div className="mb-2 mt-7 md:mt-0">
             <h3 className="font-calibre text-[15px] md:text-2xl text-slate-300">
               {companies[selectedTab].role}{' '}
-              <span className="text-[#64ffda]">@ {companies[selectedTab].company}</span>
+              <span className="text-site-accent">@ {companies[selectedTab].company}</span>
             </h3>
             <div className='flex gap-2 mt-2 flex-col md:flex-row'>
             <p className="font-mono text-sm text-slate-400 ">
@@ -122,7 +122,7 @@ const CompanyTabs: React.FC<CompanyTabsProps> = ({
           <ul className="space-y-4 mt-4">
             {companies[selectedTab].highlights.map((highlight, index) => (
               <li key={index} className="flex items-start gap-2">
-                <span className="text-[#64ffda] mt-1.5 text-[12px]">▹</span>
+                <span className="text-site-accent mt-1.5 text-[12px]">▹</span>
                 <span className="font-calibre text-slate-400 text-lg text-[15px]">{highlight}</span>
               </li>
             ))}

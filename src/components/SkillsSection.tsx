@@ -3,11 +3,11 @@ import { skilleducation } from "@/config";
 const SkillsSection = () => {
 
   return (
-    <section id="skill" className="min-h-screen bg-[#0a192f] py-24 px-6">
+    <section id="skill" className="min-h-screen bg-site-bg py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <div className="flex items-center gap-4 mb-10">
           <h2 className="font-calibre text-[25px] text-slate-300 font-semibold">
-            <span className="font-mono text-[#64ffda] text-xl">{skilleducation.sectionNumber}</span>
+            <span className="font-mono text-site-accent text-xl">{skilleducation.sectionNumber}</span>
 
             {skilleducation.sectionName}
           </h2>
@@ -18,10 +18,10 @@ const SkillsSection = () => {
           {skilleducation.skillCategories.map((skill, index) => (
             <div key={index} className="group">
               <div className="flex items-center gap-3 mb-1.5">
-                <span className="text-lg group-hover:text-[#64ffda] transition-colors duration-300">
+                <span className="text-lg group-hover:text-site-accent transition-colors duration-300">
                   {skill.icon}
                 </span>
-                <h3 className="text-slate-200 font-semibold text-base group-hover:text-[#64ffda] transition-colors duration-300">
+                <h3 className="text-slate-200 font-semibold text-base group-hover:text-site-accent transition-colors duration-300">
                   {skill.title}
                 </h3>
               </div>
@@ -34,16 +34,16 @@ const SkillsSection = () => {
 
         {/* Education Section */}
         <div className="mt-14">
-          <h3 className="text-base font-semibold text-[#64ffda] mb-6">EDUCATION</h3>
+          <h3 className="text-lg font-semibold text-site-accent mb-6">EDUCATION</h3>
           {skilleducation.education.schools.map((school, index) => (
-            <div key={index} className="group cursor-pointer">
+            <div key={index} className="group cursor-pointer mb-5">
               <div className="flex items-start gap-3 transform transition-transform duration-300 group-hover:translate-x-2">
-                <span className="text-[#64ffda] group-hover:text-[#64ffda] text-base">▹</span>
+                <span className="text-site-accent group-hover:text-site-accent text-lg">▹</span>
                 <div>
-                  <h4 className="text-slate-200 text-[15px] font-medium group-hover:text-[#64ffda]">
+                  <h4 className="text-slate-200 text-[17px] font-medium group-hover:text-site-accent">
                     {school.name}
                   </h4>
-                  <div className="text-slate-400 text-[14px] mt-2 space-y-1">
+                  <div className="text-slate-400 text-[16px] mt-2 space-y-1">
                     <p className="font-medium">
                       {school.degree} | {school.date}
                     </p>
@@ -52,7 +52,7 @@ const SkillsSection = () => {
                       {school.cgpa ? ` • CGPA: ${school.cgpa}` : ''}
                     </p>
                     {school.highlights && (
-                      <p className="text-slate-500">
+                      <p className="text-slate-500 text-[15px]">
                         {school.highlights}
                       </p>
                     )}

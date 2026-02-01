@@ -56,11 +56,11 @@ export const navItems = {
 export const ABOUT_SECTION_DATA = {
     sectionNumber: "01",
     title: "About Me",
-    imagePath: "spiderman.png",
+    imagePath: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIcmYzYeu4yRimTk2DLd1mcq8r391m468Arg&s",
     imageAlt: "Profile",
     paragraphs: [
         "I'm a Java Full Stack Developer with nearly 4 years of combined professional and project experience building scalable, cloud-native web applications using Java, Spring Boot, React.js, and AWS. I specialize in designing RESTful APIs, developing end-to-end full stack features, integrating third-party services, and deploying applications via CI/CD pipelines.",
-        "Currently, as a Java Full Stack Developer at <a href='https://www.fidelity.com/' class='text-[#64ffda] hover:underline'>Fidelity Investments</a> in Westlake, TX, I design and develop scalable backend services supporting high-volume financial reporting and transaction workflows. I'm passionate about Agile development, performance optimization, secure application design, and collaborating with cross-functional teams to translate business requirements into high-quality technical solutions."
+        "Currently, as a Java Full Stack Developer at <a href='https://www.fidelity.com/' class='text-site-accent hover:underline'>Fidelity Investments</a> in Westlake, TX, I design and develop scalable backend services supporting high-volume financial reporting and transaction workflows. I'm passionate about Agile development, performance optimization, secure application design, and collaborating with cross-functional teams to translate business requirements into high-quality technical solutions."
     ]
 };
 

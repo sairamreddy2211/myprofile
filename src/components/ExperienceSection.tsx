@@ -28,11 +28,11 @@ const ExperienceSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="min-h-screen bg-[#0a192f] py-24 px-6" id="experience">
+    <section className="min-h-screen bg-site-bg py-24 px-6" id="experience">
       <div className="max-w-7xl mx-auto">
         <div className="mb-12">
           <div className="flex items-center gap-2">
-            <span className="font-mono text-[#64ffda] text-xl">{experiences.sectionNumber}</span>
+            <span className="font-mono text-site-accent text-xl">{experiences.sectionNumber}</span>
             <h2 className="font-calibre text-[22px] md:text-4xl text-slate-300 font-semibold">{experiences.sectionName}</h2>
             <div className="h-[1px] bg-slate-600 flex-grow ml-4"></div>
           </div>

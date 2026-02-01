@@ -2,11 +2,11 @@ import React from 'react';
 
 const CSSShowcase: React.FC = () => {
   return (
-    <section className="min-h-[50vh] flex flex-col justify-center px-6 bg-[#0a192f] py-20">
+    <section className="min-h-[50vh] flex flex-col justify-center px-6 bg-site-bg py-20">
       <div className="space-y-8">
         <div>
         
-          <h2 className="text-[22px] md:text-3xl font-semibold text-[#00caf9]">
+          <h2 className="text-[22px] md:text-3xl font-semibold text-site-highlight">
                     ⚡   Fun Side Projects
                   </h2>
           <p className="font-calibre text-[18px] md:text-[20px] text-slate-300  mt-4">
@@ -16,15 +16,15 @@ const CSSShowcase: React.FC = () => {
         </div>
 
         <div className="relative w-full overflow-hidden  hidden md:block">
-          <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-[#0a192f] to-transparent z-10" />
-          <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-[#0a192f] to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-10 bg-gradient-to-l from-site-bg to-transparent z-10" />
+          <div className="absolute inset-y-0 left-0 w-10 bg-gradient-to-r from-site-bg to-transparent z-10" />
           
           <iframe 
             src="https://sairamreddy2211.github.io/100dayscss/?isShow=true"
             className="w-full h-[412px] rounded-lg border border-slate-700"
             style={{
               scrollbarWidth: 'thin',
-              scrollbarColor: '#22ea4b #0a192f'
+              scrollbarColor: 'var(--site-accent) var(--site-bg)'
             }}
           />
         </div>
@@ -34,7 +34,7 @@ const CSSShowcase: React.FC = () => {
             href="https://sairamreddy2211.github.io/100dayscss/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded px-6 py-3 font-mono text-sm text-[#22ea4b] border border-[#22ea4b] hover:bg-[#22ea4b] hover:bg-opacity-10 transition-all duration-300"
+            className="inline-flex items-center gap-2 rounded px-6 py-3 font-mono text-sm text-site-accent border border-site-accent hover:bg-site-accent hover:bg-opacity-10 transition-all duration-300"
           >
             View Full Gallery
           </a>

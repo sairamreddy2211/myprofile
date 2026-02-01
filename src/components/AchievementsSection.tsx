@@ -14,7 +14,7 @@ const AchievementsSection = () => {
         {/* Publication / Achievements Column */}
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <Trophy className="w-6 h-6 text-[#64ffda]" />
+            <Trophy className="w-6 h-6 text-site-accent" />
             <h2 className="text-xl font-semibold text-gray-200">PUBLICATION</h2>
           </div>
           {achievements.competitions.map((achievement, index) => (
@@ -25,7 +25,7 @@ const AchievementsSection = () => {
         {/* Certifications Column */}
         <div>
           <div className="flex items-center gap-3 mb-8">
-            <Award className="w-6 h-6 text-[#64ffda]" />
+            <Award className="w-6 h-6 text-site-accent" />
             <h2 className="text-xl font-semibold text-gray-200">CERTIFICATIONS</h2>
           </div>
           {achievements.certifications.map((cert, index) => (
@@ -37,7 +37,7 @@ const AchievementsSection = () => {
         {achievements.philanthropy && achievements.philanthropy.length > 0 && (
           <div>
             <div className="flex items-center gap-3 mb-8">
-              <HeartHandshake className="w-6 h-6 text-[#64ffda]" />
+              <HeartHandshake className="w-6 h-6 text-site-accent" />
               <h2 className="text-xl font-semibold text-gray-200">PHILANTHROPY</h2>
             </div>
             {achievements.philanthropy.map((item, index) => (

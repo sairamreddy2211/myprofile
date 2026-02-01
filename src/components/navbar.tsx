@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
 
   return (
     <motion.nav
-      className="px-7 md:px-14 fixed w-full top-0 z-50 bg-[#0a192f]/90 backdrop-blur-sm py-4 pt-10"
+      className="px-7 md:px-14 fixed w-full top-0 z-50 bg-site-bg/90 backdrop-blur-sm py-4 pt-10"
       animate={{
         y: hidden ? -100 : 0,
       }}
@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
     >
       <div className="mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <a href="/" className="text-[#00caf9] w-12 h-12">
+          <a href="/" className="text-site-orange w-12 h-12">
             <svg viewBox="0 0 100 100" className="w-full h-full">
               <polygon
                 points="50,5 95,25 95,75 50,95 5,75 5,25"
@@ -81,9 +81,9 @@ const Navbar: React.FC = () => {
               key={index}
               href={`#${item.text.toLowerCase()}`}
               onClick={(e) => handleScroll(e, item.text.toLowerCase())}
-              className="group flex items-center text-slate-300 hover:text-[#00caf9] transition-colors"
+              className="group flex items-center text-slate-300 hover:text-site-orange transition-colors"
             >
-              <span className="font-mono text-sm text-[#00caf9] mr-1">
+              <span className="font-mono text-sm text-site-orange mr-1">
                 {item.number}
               </span>
               <span className="font-calibre text-sm">
@@ -102,18 +102,18 @@ const Navbar: React.FC = () => {
         }}
         transition={{ duration: 0.3, ease: "easeInOut" }}
       >
-        <div className='h-full w-full bg-[#152a45] w-[200px] px-10'>
+        <div className="h-full w-full bg-site-surface-alt w-[200px] px-10">
           <div className="flex flex-col justify-between gap-7 pt-[150px]">
             {navItems.navItems.map((item, index) => (
               <a
                 key={index}
                 href={`#${item.text.toLowerCase()}`}
                 onClick={(e) => handleScroll(e, item.text.toLowerCase())}
-                className="grouptext-slate-300 hover:text-[#00caf9] transition-colors"
+                className="group text-slate-300 hover:text-site-orange transition-colors"
               >
                 <div className='flex flex-col items-center justify-center '>
 
-                  <p className="font-mono text-lg text-[#00caf9]">
+                  <p className="font-mono text-lg text-site-orange">
                     {item.number}
                   </p>
                   <p className="font-calibre text-lg text-white">

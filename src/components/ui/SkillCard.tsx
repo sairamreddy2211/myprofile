@@ -17,7 +17,7 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ skill }) => {
   return (
-    <div className="relative p-6 rounded-lg border border-slate-700 bg-slate-900/50 hover:border-[#64ffda] transition-colors group">
+    <div className="relative p-6 rounded-lg border border-slate-700 bg-slate-900/50 hover:border-site-accent transition-colors group">
       <div className="flex items-start gap-4">
         <img 
           src={skill.icon} 

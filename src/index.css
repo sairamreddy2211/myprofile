@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Site color palette – change these to update the whole site */
+@layer base {
+  :root {
+    --site-bg: #0a192f;
+    --site-surface: #112240;
+    --site-surface-alt: #152a45;
+    --site-accent: #10b981;
+    --site-accent-hover: #34d399;
+    --site-highlight: #06b6d4;
+    --site-orange: #f97316;
+    --site-orange-hover: #fb923c;
+  }
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

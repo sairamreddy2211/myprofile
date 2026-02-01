@@ -15,6 +15,16 @@ module.exports = {
     },
     extend: {
       colors: {
+        site: {
+          bg: "var(--site-bg)",
+          surface: "var(--site-surface)",
+          "surface-alt": "var(--site-surface-alt)",
+          accent: "var(--site-accent)",
+          "accent-hover": "var(--site-accent-hover)",
+          highlight: "var(--site-highlight)",
+          orange: "var(--site-orange)",
+          "orange-hover": "var(--site-orange-hover)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
