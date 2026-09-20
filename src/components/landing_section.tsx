@@ -31,7 +31,7 @@ const Landing_section: React.FC = () => {
     const handleDownload = () => {
         const fileName = RESUME_DOWNLOAD.fileName;
         const downloadAs = RESUME_DOWNLOAD.downloadAs ?? fileName;
-        const filePath = `${import.meta.env.BASE_URL}/resumes/${fileName}`;
+        const filePath = `${import.meta.env.BASE_URL}resumes/${encodeURIComponent(fileName)}`;
         const link = document.createElement('a');
         link.href = filePath;
         link.download = downloadAs;
@@ -72,6 +72,7 @@ const Landing_section: React.FC = () => {
 
 
                     <div className='flex gap-3 md:hidden'>
+                        {socialLinks.github.url && (
                         <a
                             href={socialLinks.github.url}
                             target="_blank"
@@ -82,6 +83,7 @@ const Landing_section: React.FC = () => {
                                 <path d={SOCIAL_ICONS.github} />
                             </svg>
                         </a>
+                        )}
                         <a
                             href={socialLinks.linkedin.url}
                             target="_blank"
@@ -103,7 +105,7 @@ const Landing_section: React.FC = () => {
                             </svg>
                         </a>
                     </div>
-                     <button onClick={() => handleDownload('pdf', 'light')} className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3 font-mono text-sm text-site-orange border border-site-orange rounded hover:bg-site-orange hover:bg-opacity-10 transition-all duration-300">
+                     <button onClick={handleDownload} className="inline-flex items-center gap-2 rounded p-2 md:px-6 md:py-3 font-mono text-sm text-site-orange border border-site-orange rounded hover:bg-site-orange hover:bg-opacity-10 transition-all duration-300">
                                 <Download size={16} />
                                 <span className='hidden md:inline'>Download Resume</span>
                             </button>

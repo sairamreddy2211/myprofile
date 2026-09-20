@@ -15,7 +15,7 @@ const AchievementsSection = () => {
         <div>
           <div className="flex items-center gap-3 mb-8">
             <Trophy className="w-6 h-6 text-site-accent" />
-            <h2 className="text-xl font-semibold text-gray-200">PUBLICATION</h2>
+            <h2 className="text-xl font-semibold text-gray-200">AWARDS</h2>
           </div>
           {achievements.competitions.map((achievement, index) => (
             <AchievementCard key={index} {...achievement} />

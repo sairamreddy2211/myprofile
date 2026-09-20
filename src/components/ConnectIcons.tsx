@@ -7,6 +7,7 @@ const ConnectIcons: React.FC = () => {
 
   return (
     <div className="hidden md:flex fixed flex-col space-y-4 bottom-0 left-[50px] items-center justify-center">
+      {socialLinks.github.url && (
       <a
         href={socialLinks.github.url}
         target="_blank"
@@ -17,6 +18,7 @@ const ConnectIcons: React.FC = () => {
           <path d={SOCIAL_ICONS.github} />
         </svg>
       </a>
+      )}
       <a
         href={socialLinks.linkedin.url}
         target="_blank"
