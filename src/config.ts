@@ -27,7 +27,7 @@ export const LANDING_SECTION_DATA = {
     description: "Full Stack Software Engineer with 4.5+ years of experience building enterprise applications with Angular, TypeScript, and .NET Core / C#, with additional exposure to React and Next.js. Proven track record on large-scale fintech platforms serving 50M+ users, including a ~60% improvement in application load performance and the migration of a native Android sales application to a PWA for 70,000+ employees.",
     socialLinks: {
         github: {
-            url: "",
+            url: "https://github.com/sairamreddy2211",
             ariaLabel: "GitHub Profile"
         },
         linkedin: {
